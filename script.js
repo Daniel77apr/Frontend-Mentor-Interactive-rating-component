@@ -13,9 +13,7 @@ thankYouNoteEl.className = "paragraph center";
 
 const starContainerEl = document.getElementById("star-container");
 const starIconEl = document.getElementById("star-icon");
-const dynamicTextEl = document.createElement("p");
-dynamicTextEl.style.color = "var(--orange)";
-dynamicTextEl.innerHTML = `You selected <span id="dynamic-number"></span> out of 5`;
+const dynamicTextEl = document.getElementById("dynamic-text")
 const dynamicNumberEl = document.getElementById("dynamic-number");
 /*dynamicNumberEl.textContent = "hello";*/
 
@@ -40,14 +38,15 @@ function onSubmit() {
         headerEl.textContent = "Thank you!";
         headerEl.className += " center";
 
-        console.log(dynamicNum());
-        console.log(dynamicNumberEl);
-        
-        /*dynamicNumberEl.textContent = `${dynamicNum()}`*/
+        dynamicNumberEl.textContent = `${dynamicNum()}`
+        dynamicTextEl.style.display = "block";
+        starContainerEl.replaceChild(dynamicTextEl, starIconEl);
+        starContainerEl.className = "oval";
+
         cardEl.replaceChild(thankYouNoteEl, formEl);
 
-        starContainerEl.className = "oval";
-        starContainerEl.replaceChild(dynamicTextEl, starIconEl);
+        console.log(dynamicNum());
+        console.log(dynamicNumberEl);
 
         cardEl.insertBefore(phoneImageEl, starContainerEl);
 

@@ -156,3 +156,8 @@ fieldset {
     width: 50%;
     margin: 0 auto 1rem auto;
 }
+
+#dynamic-text {
+    display: none;
+    color: var(--orange);
+}
