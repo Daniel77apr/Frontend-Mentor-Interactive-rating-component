@@ -29,7 +29,7 @@ main {
 }
 
 #card {
-    background-color: var(--dark-blue);
+    background-image: linear-gradient(var(--dark-blue), hsl(226, 21%, 12%));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
