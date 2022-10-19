@@ -117,16 +117,16 @@ fieldset {
     color: var(--orange);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
     html {
         font-size: 12px;
     }
 
-    .card {
+    #card {
         height: 350px;
     }
 
-    .star-icon {
+    #star-icon {
         margin-top: 12px;
     }
 
@@ -146,6 +146,7 @@ fieldset {
     background-color: rgba(255, 255, 255, 0.05);
     margin: 0 auto 1.5rem auto;
     width: 60%;
+    min-width: 160px;
     height: 2.3rem;
     border-radius: calc(var(--button-size) / 2);
     text-align:center;
