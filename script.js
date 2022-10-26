@@ -15,7 +15,6 @@ const starContainerEl = document.getElementById("star-container");
 const starIconEl = document.getElementById("star-icon");
 const dynamicTextEl = document.getElementById("dynamic-text")
 const dynamicNumberEl = document.getElementById("dynamic-number");
-/*dynamicNumberEl.textContent = "hello";*/
 
 const phoneImageEl = document.createElement("img");
 phoneImageEl.src = "images/illustration-thank-you.svg";
@@ -32,7 +31,6 @@ function dynamicNum() {
     }
 }
 
-// Callback function
 function onSubmit() {
     if (radioEls[0].checked || radioEls[1].checked || radioEls[2].checked || radioEls[3].checked || radioEls[4].checked) {
         headerEl.textContent = "Thank you!";
@@ -54,5 +52,4 @@ function onSubmit() {
     }
 }
 
-// Event listener
 submitEl.addEventListener("click", onSubmit);
